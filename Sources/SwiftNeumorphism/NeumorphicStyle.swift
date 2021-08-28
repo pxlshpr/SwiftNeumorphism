@@ -12,6 +12,8 @@ public struct NeumorphicButtonStyle: ButtonStyle {
     
     @Environment(\.colorScheme) var colorScheme
     
+    public init() {}
+    
     public func makeBody(configuration: Configuration) -> some View {
         return configuration.label
             .shadow(color: shadowColorTopLeading, radius: 1, x: -1, y: -1)
